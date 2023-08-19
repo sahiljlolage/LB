@@ -1,0 +1,71 @@
+/*
+Assignment 2
+
+Q.5.Accept number from user and check whether number is even or odd. 
+
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Problem Statement : Program to Accept number from user and check whether number is even or odd. 
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Function Name    : ChkEven
+// Input            : integer
+// Output           : integer
+// Description      : Accept number from user and check whether number is even or odd. 
+// Author           : Sahil Jagdish Lolage 
+// Date             : 22/04/2023
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#define TRUE 1
+#define FALSE 0
+
+typedef int BOOL;
+
+BOOL ChkEven(int iNo)
+{
+    if ((iNo%2)== 0)
+    {   
+        return TRUE;
+
+    }
+    else
+    {
+        return FALSE;
+    }
+    
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//Entry Point Function
+////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+    BOOL bRet = FALSE;
+
+    printf("Enter number ");
+    scanf("%d",&iValue);
+
+    bRet = ChkEven(iValue);
+
+    if (bRet == TRUE)
+    {
+        printf("%d is Even number",iValue);
+    }
+    else
+    {
+        printf("%d is Odd number",iValue);
+    }
+
+    return 0;
+}
+

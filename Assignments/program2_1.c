@@ -1,0 +1,53 @@
+/*
+Assignment 2
+
+Q.1.Accept one number from user and print that number of * on screen.
+
+*/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Problem Statement : Program to Accept one number from user and print that number of * on screen.
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Function Name    : Display 
+// Input            : integer 
+// Output           : integer
+// Description      : Accept one number from user and print that number of * on screen.
+// Author           : Sahil Jagdish Lolage 
+// Date             : 22/04/2023
+//
+////////////////////////////////////////////////////////////////////////////////
+
+void Display(int iNo)
+{
+    int iCnt = 0;
+
+    for(iCnt; iCnt<= iNo ; iCnt++)
+    {
+        printf("*");
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//Entry Point Function
+////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+        
+        printf("Enter number");
+        scanf("%d",&iValue);
+
+        Display(iValue);
+        
+        return 0;
+        
+
+}
